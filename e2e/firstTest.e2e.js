@@ -1,6 +1,6 @@
 const { reloadApp } = require('detox-expo-helpers');
 
-jest.setTimeout(30000);
+jest.setTimeout(20000);
 
 describe('Example', () => {
   beforeEach(async () => {
