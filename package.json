@@ -21,6 +21,7 @@
     "detox-expo-helpers": "github:fschoenfeldt/detox-expo-helpers#0.7.1",
     "expo-detox-hook": "^1.0.10",
     "jest": "^27.5.1",
+    "patch-package": "^6.4.7",
     "react-native-testing-library": "^6.0.0",
     "react-test-renderer": "^18.2.0"
   },
