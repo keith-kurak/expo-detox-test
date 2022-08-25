@@ -1,14 +1,15 @@
 diff --git a/node_modules/detox-expo-helpers/index.js b/node_modules/detox-expo-helpers/index.js
-index bc24591..15865e1 100644
+index bc24591..5cc7847 100644
 --- a/node_modules/detox-expo-helpers/index.js
 +++ b/node_modules/detox-expo-helpers/index.js
-@@ -34,7 +34,8 @@ const getAppUrl = async () => {
+@@ -34,7 +34,9 @@ const getAppUrl = async () => {
      url = await UrlUtils.constructManifestUrlAsync(process.cwd());
    }
  
 -  return url;
-+  console.log(url);
-+  return url.replace(':80', ":19000");
++  //console.log(url);
++  //return url.replace(':80', ":19000");
++  return 'http://localhost:19000';
  };
  
  const getAppHttpUrl = async () => {
