@@ -15,3 +15,5 @@ web-build/
 
 bin/**
 bin-old/**
+
+artifacts/**
