@@ -33,4 +33,6 @@ jobs:
         mkdir -p bin/Exponent.app
         tar -xf exponent-ios.tar.gz -C bin/Exponent.app
         zip -q -r exponent-ios.zip bin/Exponent.app
+    - run: brew tap wix/brew
+    - run: brew install applesimutils
     - run: yarn start -i & yarn detox test --configuration ios
