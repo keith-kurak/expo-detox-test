@@ -37,7 +37,7 @@ jobs:
     - run: brew install applesimutils
     - run: yarn start & yarn detox test --configuration ios --record-logs all
     - name: Archive code coverage results
-        uses: actions/upload-artifact@v3
-        with:
-          name: code-coverage-report
-          path: artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: code-coverage-report
+        path: artifacts
