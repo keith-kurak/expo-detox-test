@@ -35,4 +35,9 @@ jobs:
         zip -q -r exponent-ios.zip bin/Exponent.app
     - run: brew tap wix/brew
     - run: brew install applesimutils
-    - run: yarn start & yarn detox test --configuration ios
+    - run: yarn start & yarn detox test --configuration ios --record-logs all
+    - name: Archive code coverage results
+        uses: actions/upload-artifact@v3
+        with:
+          name: code-coverage-report
+          path: artifacts
